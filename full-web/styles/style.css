@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 3000px;
+    color: #17242d;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button,
+span,
+li {
+    font-family: 'Merriweather', serif;
+}
+
+.navbar {
+    background-color: rgb(21, 38, 55);
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: auto;
+    height: 72px;
+    float: left;
+    margin-left: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 10%;
+    margin-top: 24px;
+}
+
+.navbar ul li {
+    color: white;
+    display: inline;
+    margin-right: 24px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* strart hero image */
+.hero {
+    width: 100%;
+    height: calc(100vh - 72px);
+    margin-top: 72px;
+    background-image: url(../images/hero-marketing.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+
+.hero .info {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+
+}
+
+.hero .info h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.hero .info p {
+    color: #ffff;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button1,
+.button2 {
+    height: 42px;
+    width: auto;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #D81B60;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: #D81B60;
+    color: #ffff;
+    margin-left: 16px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-left: calc(35% - 16px);
+}
+
+/* end hero section */
+
+
+/* start agency sction */
+
+/* تنسيق عنوان القسم */
+.welcome-section {
+    padding: 80px 0px;
+
+    overflow: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #17242d;
+}
+
+.section-title h2 span {
+    color: #d81b60;
+}
+
+
+/* ترتيب البطاقات بجانب بعضها استخدمت الطفو */
+
+.welcome-card {
+    float: left;
+    width: 31.33%;
+    min-height: 280px;
+    margin-right: 3%;
+    padding: 30px 25px;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    background-color: #ffffff;
+}
+
+/* تنسيق البطاقة  */
+.welcome-card:last-child {
+    margin-right: 0px;
+}
+
+.welcome-card {
+    min-height: 280px;
+    padding: 30px 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #bdbdbd;
+    transition: 0.4s;
+    position: relative;
+    overflow: auto;
+    z-index: 10;
+}
+
+/* تنسيق الأيقونات و النصوص */
+.card-icon {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 48px;
+    color: #d81b60;
+}
+
+.welcome-card h3 {
+    margin-bottom: 18px;
+    color: #d81b60;
+    font-size: 25px;
+}
+
+.welcome-card p {
+    min-height: 85px;
+    margin-bottom: 20px;
+    color: #17242d;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.welcome-card .card-icon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #d81b60;
+}
+
+.welcome-card h3 {
+    margin-bottom: 18px;
+    color: #d81b60;
+    font-size: 25px;
+}
+
+.welcome-card p {
+    min-height: 85px;
+    margin-bottom: 20px;
+    color: #17242d;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.welcome-card .welcome-card-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #17242d;
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.welcome-card .welcome-card-btn:hover {
+    background-color: #d81b60;
+}
+
+.welcome-card .welcome-card-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #17242d;
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-card .welcome-card-btn :hover {
+    background-color: #d81b60;
+}
+
+/* end agency sction */
+
+/* start service section */
+/* تنسيق عناوين الأقسام  */
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #17242d;
+}
+
+.section-title h2 span {
+    color: #d81b60;
+}
+
+.title-line {
+    width: 145px;
+    height: 4px;
+    margin: 12px auto 0;
+    background-color: #17242d;
+    position: relative;
+}
+
+.services-section .title-line,
+.work-section .title-line {
+    width: 145px;
+    height: 4px;
+    margin: 12px auto 0;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.services-section .section-title h2,
+.work-section .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+/* إضافة صورة موحدة للقسمسن معا */
+.two-section {
+    width: 100%;
+    height: 1300px;
+    overflow: visible;
+    margin-top: 46px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)),
+        url("../images/abstract-neutral-section-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* تنسيق قسم الخدمات  */
+.services-section {
+    padding: 16px 0;
+}
+
+/* ترتيب بطاقات الخدمات باستخدام Float */
+.service-card {
+    float: left;
+    width: 31.33%;
+    min-height: 205px;
+    margin-right: 3%;
+    margin-bottom: 24px;
+    padding: 28px 25px;
+
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 1px solid #bdbdbd;
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.service-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* تنسيق أيقونات الخدمات */
+.service-icon {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #d81b60;
+}
+
+/* تنسيق عناوين الخدمات */
+.service-card h3 {
+    margin-bottom: 12px;
+    color: #17242d;
+    font-size: 21px;
+}
+
+/* تنسيق نصوص الخدمات */
+.service-card p {
+    color: #17242d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* تأثير Hover على بطاقات الخدمات */
+.service-card:hover {
+    background-color: #17242d;
+    transform: translateY(-8px);
+
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+    color: #ffffff;
+}
+
+.service-card:hover .service-icon {
+    color: #d81b60;
+}
+
+/* تنسيق قسم Our Work */
+.work-section {
+    padding: 16px 0;
+
+}
+
+/* ترتيب صور Our Work باستخدام Float */
+.work-card {
+    float: left;
+    width: 31.33%;
+    height: 220px;
+    margin-right: 3%;
+    margin-bottom: 24px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: #17242d;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.work-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* تنسيق صور المعرض */
+
+.work-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #bdbdbd;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* إضافة طبقة فوق صور المعرض */
+.work-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px 18px;
+
+    color: #ffffff;
+    background: linear-gradient(transparent,
+            rgba(23, 36, 45, 80.2));
+
+    transform: translateY(100%);
+    transition: 0.4s;
+}
+
+/* تنشيط الطبقة عند مرور مؤشر الفأرة Hover */
+.work-card:hover .work-overlay {
+    transform: translateY(0);
+}
+
+/* تنسيق نصوص المعرض */
+.work-overlay h3 {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.work-overlay p {
+    color: #eb6299;
+    font-size: 16px;
+}
+
+/* ترتيب البطاقات باستخدام float */
+.pricing-card {
+    float: left;
+    width: 31.33%;
+    min-height: 410px;
+    margin-right: 3%;
+    padding: 35px 25px;
+
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 1px solid #bdbdbd;
+
+    position: relative;
+    transition: 0.3s;
+}
+
+.pricing-card:last-child {
+    margin-right: 0;
+}
+
+/* حل مشكلة الطفو بطريقة الابن الفارغ الإضافي */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* تنسق خطة السعر  */
+.pricing-card h3 {
+    margin-bottom: 25px;
+
+    color: #d81b60;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* تنسيق السعر  */
+.price {
+    width: 120px;
+    height: 120px;
+
+    margin: 0 auto 28px;
+
+    border: 2px solid #d81b60;
+    border-radius: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    color: #17242d;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* تنسيق إشارةدولار $ */
+.price span {
+    font-size: 20px;
+    margin-right: 3px;
+    color: #d81b60;
+}
+
+/* تنسيق كلمة الشهر  */
+.price small {
+    display: block;
+    width: 100%;
+
+    margin-top: 4px;
+
+    color: #d81b60;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* تنسيق قائمة المزايا  */
+.pricing-card ul {
+    padding: 0;
+    margin: 0 0 28px;
+
+    list-style: none;
+}
+
+/* تنسيق عنصر لائحة */
+.pricing-card li {
+    margin-bottom: 13px;
+
+    color: #17242d;
+    font-size: 14px;
+}
+
+/* إضافة إشارة صحيح قبل كل خيار محدد */
+.pricing-card li::before {
+    content: "✓";
+    margin-right: 8px;
+
+    color: #d81b60;
+    font-weight: bold;
+}
+
+/* تنسيق زر الخطة  */
+.pricing-btn {
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    background-color: #17242d;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.pricing-btn:hover {
+    background-color: #d81b60;
+    color: #ffffff;
+}
+
+/* تاثير تمرير الفأرة على البطاقة  */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #d81b60;
+    box-shadow: 0 8px 20px rgba(23, 36, 45, 0.18);
+}
