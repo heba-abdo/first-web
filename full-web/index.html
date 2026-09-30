@@ -1,449 +1,840 @@
 <html>
-
-<head>
+  <head>
     <title>DigitalMark | Digital Marketing Agency</title>
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="DigitalMark is a full-service digital marketing agency offering branding, social media marketing, SEO, web design, paid advertising, and data-driven strategies to help businesses grow.">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="DigitalMark is a full-service digital marketing agency offering branding, social media marketing, SEO, web design, paid advertising, and data-driven strategies to help businesses grow."
+    />
 
-    <meta name="keywords"
-        content="digital marketing agency, branding, social media marketing, SEO services, web design, paid advertising, content marketing, digital strategy, analytics, DigitalMark">
-    <meta name="author" content="Heba Khaled Abdo">
+    <meta
+      name="keywords"
+      content="digital marketing agency, branding, social media marketing, SEO services, web design, paid advertising, content marketing, digital strategy, analytics, DigitalMark"
+    />
+    <meta name="author" content="Heba Khaled Abdo" />
 
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- إضافة الخط "Merriweather" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- add font for all web -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- add font awesome for icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
-    <!-- start nav-bar -->
-    <div class="navbar">
-        <img class="logo" src="images/logo.png" alt="Logo">
+  <body>
+    <!-- شريط التنقل في أعلى الموقع -->
+    <div class="navbar" id="home-page">
+      <img class="logo" src="images/logo.png" alt="Logo" />
 
-        <ul>
-            <a href="#hero">
-                <li>home</li>
-            </a>
-            <a href="#about">
-                <li>about</li>
-            </a>
-            <a href="#work">
-                <li>glary</li>
-            </a>
-            <a href="#services">
-                <li>services</li>
-            </a>
-            <a href="">
-                <li>pricing</li>
-            </a>
-            <a href="">
-                <li>team</li>
-            </a>
-            <a href="">
-                <li>footer</li>
-            </a>
-        </ul>
+      <ul>
+        <a href="#hero">
+          <li>home</li>
+          <div class="home-line"></div>
+        </a>
+        <a href="#about">
+          <li>about</li>
+        </a>
+        <a href="#work">
+          <li>glary</li>
+        </a>
+        <a href="#services">
+          <li>services</li>
+        </a>
+        <a href="#pricing">
+          <li>pricing</li>
+        </a>
+        <a href="#team">
+          <li>team</li>
+        </a>
+        <a href="#footer">
+          <li>footer</li>
+        </a>
+      </ul>
     </div>
-    <!-- end nav-bar -->
 
-
-    <!-- start Hero Image -->
+    <!-- قسم الهيرو  -->
     <div class="hero" id="hero">
-        <div class="info">
-            <h1>digital marketing<br> agency</h1>
-            <p>Grow your brand, reach your audience, and increase your sales<br>
-                with our data-driven digital marketing solutions.
-            </p>
-            <div class="hero-button"><button class="button1">get started</button>
-                <button class="button2">learn more</button>
-            </div>
-
+      <div class="info">
+        <h1>
+          digital marketing<br />
+          agency
+        </h1>
+        <p>
+          Grow your brand, reach your audience, and increase your sales<br />
+          with our data-driven digital marketing solutions.
+        </p>
+        <div class="hero-button">
+          <button>get started</button>
+          <button>learn more</button>
         </div>
-
+      </div>
     </div>
-    <!-- end Hero Image -->
 
-    <!-- start agency section -->
+    <!-- قسم الترحيب   -->
 
     <div class="welcome-section" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>
+            Welcome To
+            <span>Our Agency</span>
+          </h2>
 
-        <div class="container">
-
-            <div class="section-title">
-                <h2>
-                    Welcome To
-                    <span>Our Agency</span>
-                </h2>
-
-                <div class="title-line"></div>
-            </div>
-
-            <div class="welcome-cards">
-
-                <!-- البطاقة الأولى -->
-                <div class="welcome-card">
-
-                    <i class="fa-solid fa-bullseye card-icon"></i>
-
-                    <h3>Strategy</h3>
-
-                    <p>
-                        We create data-driven
-                        strategies that turn
-                        your goals into growth.
-                    </p>
-                    <button class="welcome-card-btn">read more</button>
-                    <!-- <a href="#">Read More</a> -->
-
-                </div>
-
-                <!-- البطاقة الثانية -->
-                <div class="welcome-card">
-
-                    <i class="fa-solid fa-file-pen card-icon"></i>
-
-                    <h3>Content</h3>
-
-                    <p>
-                        We craft compelling
-                        content that connects
-                        and converts.
-                    </p>
-
-                    <!-- <a href="#">Read More</a> -->
-                    <button class="welcome-card-btn">read more</button>
-                </div>
-
-                <!-- البطاقة الثالثة -->
-                <div class="welcome-card">
-
-                    <i class="fa-solid fa-bullhorn card-icon"></i>
-
-                    <h3>Campaigns</h3>
-
-                    <p>
-                        We run targeted
-                        campaigns that deliver
-                        measurable results.
-                    </p>
-
-                    <!-- <a href="#">Read More</a> -->
-                    <button class="welcome-card-btn">read more</button>
-                </div>
-
-            </div>
-
+          <div class="title-line"></div>
         </div>
 
+        <div class="welcome-cards">
+          <!-- البطاقة الأولى -->
+          <div class="welcome-card">
+            <i class="fa-solid fa-bullseye card-icon"></i>
+
+            <h3>Strategy</h3>
+
+            <p>
+              We create data-driven strategies that turn your goals into growth.
+            </p>
+            <button class="welcome-card-btn">read more</button>
+            <!-- <a href="#">Read More</a> -->
+          </div>
+
+          <!-- البطاقة الثانية -->
+          <div class="welcome-card">
+            <i class="fa-solid fa-file-pen card-icon"></i>
+
+            <h3>Content</h3>
+
+            <p>We craft compelling content that connects and converts.</p>
+
+            <!-- <a href="#">Read More</a> -->
+            <button class="welcome-card-btn">read more</button>
+          </div>
+
+          <!-- البطاقة الثالثة -->
+          <div class="welcome-card">
+            <i class="fa-solid fa-bullhorn card-icon"></i>
+
+            <h3>Campaigns</h3>
+
+            <p>We run targeted campaigns that deliver measurable results.</p>
+
+            <!-- <a href="#">Read More</a> -->
+            <button class="welcome-card-btn">read more</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- end agency section -->
-
-
     <div class="two-section">
+      <!-- قسم أعمالنا or work   -->
+      <div class="work-section" id="work">
+        <div class="container">
+          <div class="section-title">
+            <h2>
+              Gallery Of
 
-        <!-- قسم أعمالنا or work   -->
-        <div class="work-section" id="work">
+              <span>Our Work</span>
+            </h2>
 
-            <div class="container">
+            <div class="title-line"></div>
+          </div>
 
-                <div class="section-title">
-                    <h2>Gallery Of
+          <div class="work-gallery clearfix">
+            <!-- المشروع الأول -->
+            <div class="work-card">
+              <img
+                src="images/gallery-social-media.png"
+                alt="Social Media Project"
+              />
 
-                        <span>Our Work</span>
-                    </h2>
-
-                    <div class="title-line"></div>
-                </div>
-
-                <div class="work-gallery clearfix">
-
-                    <!-- المشروع الأول -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-social-media.png" alt="Social Media Project">
-
-                        <div class="work-overlay">
-                            <h3>Social Media</h3>
-                            <p>Social media campaign design</p>
-                        </div>
-
-                    </div>
-
-                    <!-- المشروع الثاني -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-content.png" alt="Content Creation Project">
-
-                        <div class="work-overlay">
-                            <h3>Content Creation</h3>
-                            <p>Creative content project</p>
-                        </div>
-
-                    </div>
-
-                    <!-- المشروع الثالث -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-ads.png" alt="Paid Advertising Project">
-
-                        <div class="work-overlay">
-                            <h3>Paid Advertising</h3>
-                            <p>Advertising campaign design</p>
-                        </div>
-
-                    </div>
-
-                    <!-- المشروع الرابع -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-branding.png" alt="Branding Project">
-
-                        <div class="work-overlay">
-                            <h3>Branding</h3>
-                            <p>Brand identity project</p>
-                        </div>
-
-                    </div>
-
-                    <!-- المشروع الخامس -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-web-design.png" alt="Web Design Project">
-
-                        <div class="work-overlay">
-                            <h3>Web Design</h3>
-                            <p>Modern website design</p>
-                        </div>
-
-                    </div>
-
-                    <!-- المشروع السادس -->
-                    <div class="work-card">
-
-                        <img src="images/gallery-analytics.png" alt="Analytics Project">
-
-                        <div class="work-overlay">
-                            <h3>Analytics</h3>
-                            <p>Data visualization project</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <div class="work-overlay">
+                <h3>Social Media</h3>
+                <p>Social media campaign design</p>
+              </div>
             </div>
 
-        </div>
+            <!-- المشروع الثاني -->
+            <div class="work-card">
+              <img
+                src="images/gallery-content.png"
+                alt="Content Creation Project"
+              />
 
-
-        <!-- قسم الخدمات التي يقدمها موقعنا  -->
-        <div class="services-section" id="services">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>
-                        Services Of
-                        <span>Our Agency</span>
-                    </h2>
-
-                    <div class="title-line"></div>
-                </div>
-
-                <div class="services-cards clearfix">
-
-                    <!-- الخدمة الأولى -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-pen-nib service-icon"></i>
-
-                        <h3>Branding</h3>
-
-                        <p>
-                            We create strong visual identities
-                            that make your brand memorable.
-                        </p>
-
-                    </div>
-
-                    <!-- الخدمة الثانية -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-share-nodes service-icon"></i>
-
-                        <h3>Social Media</h3>
-
-                        <p>
-                            We help you build an active and
-                            connected online community.
-                        </p>
-
-                    </div>
-
-                    <!-- الخدمة الثالثة -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-magnifying-glass service-icon"></i>
-
-                        <h3>SEO</h3>
-
-                        <p>
-                            We improve your visibility and help
-                            people find your website easily.
-                        </p>
-
-                    </div>
-
-                    <!-- الخدمة الرابعة -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-desktop service-icon"></i>
-
-                        <h3>Web Design</h3>
-
-                        <p>
-                            We design clean and professional
-                            websites for your business.
-                        </p>
-
-                    </div>
-
-                    <!-- الخدمة الخامسة -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-bullhorn service-icon"></i>
-
-                        <h3>Paid Ads</h3>
-
-                        <p>
-                            We create focused advertising
-                            campaigns for the right audience.
-                        </p>
-
-                    </div>
-
-                    <!-- الخدمة السادسة -->
-                    <div class="service-card">
-
-                        <i class="fa-solid fa-chart-column service-icon"></i>
-
-                        <h3>Analytics</h3>
-
-                        <p>
-                            We study your website data to help
-                            you understand your audience.
-                        </p>
-
-                    </div>
-
-                </div>
-
+              <div class="work-overlay">
+                <h3>Content Creation</h3>
+                <p>Creative content project</p>
+              </div>
             </div>
 
+            <!-- المشروع الثالث -->
+            <div class="work-card">
+              <img
+                src="images/gallery-ads.png"
+                alt="Paid Advertising Project"
+              />
+
+              <div class="work-overlay">
+                <h3>Paid Advertising</h3>
+                <p>Advertising campaign design</p>
+              </div>
+            </div>
+
+            <!-- المشروع الرابع -->
+            <div class="work-card">
+              <img src="images/gallery-branding.png" alt="Branding Project" />
+
+              <div class="work-overlay">
+                <h3>Branding</h3>
+                <p>Brand identity project</p>
+              </div>
+            </div>
+
+            <!-- المشروع الخامس -->
+            <div class="work-card">
+              <img
+                src="images/gallery-web-design.png"
+                alt="Web Design Project"
+              />
+
+              <div class="work-overlay">
+                <h3>Web Design</h3>
+                <p>Modern website design</p>
+              </div>
+            </div>
+
+            <!-- المشروع السادس -->
+            <div class="work-card">
+              <img src="images/gallery-analytics.png" alt="Analytics Project" />
+
+              <div class="work-overlay">
+                <h3>Analytics</h3>
+                <p>Data visualization project</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- قسم الأرقام و الاحصائيات -->
+      <div class="statistics-section" id="statistics">
+        <div class="container">
+          <div class="statistics clearfix">
+            <!-- الإحصائية الأولى -->
+            <div class="statistic-box">
+              <i class="fa-solid fa-users statistic-icon"></i>
+
+              <h3>250+</h3>
+
+              <p>Happy Clients</p>
+            </div>
+
+            <!-- الإحصائية الثانية -->
+            <div class="statistic-box">
+              <i class="fa-solid fa-folder-open statistic-icon"></i>
+
+              <h3>500+</h3>
+
+              <p>Projects Completed</p>
+            </div>
+
+            <!-- الإحصائية الثالثة -->
+            <div class="statistic-box">
+              <i class="fa-solid fa-calendar-check statistic-icon"></i>
+
+              <h3>10+</h3>
+
+              <p>Years Experience</p>
+            </div>
+
+            <!-- الإحصائية الرابعة -->
+            <div class="statistic-box">
+              <i class="fa-solid fa-heart statistic-icon"></i>
+
+              <h3>98%</h3>
+
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- قسم الخدمات التي يقدمها موقعنا  -->
+      <div class="services-section" id="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>
+              Services Of
+              <span>Our Agency</span>
+            </h2>
+
+            <div class="title-line"></div>
+          </div>
+
+          <div class="services-cards clearfix">
+            <!-- الخدمة الأولى -->
+            <div class="service-card">
+              <i class="fa-solid fa-pen-nib service-icon"></i>
+
+              <h3>Branding</h3>
+
+              <p>
+                We create strong visual identities that make your brand
+                memorable.
+              </p>
+            </div>
+
+            <!-- الخدمة الثانية -->
+            <div class="service-card">
+              <i class="fa-solid fa-share-nodes service-icon"></i>
+
+              <h3>Social Media</h3>
+
+              <p>We help you build an active and connected online community.</p>
+            </div>
+
+            <!-- الخدمة الثالثة -->
+            <div class="service-card">
+              <i class="fa-solid fa-magnifying-glass service-icon"></i>
+
+              <h3>SEO</h3>
+
+              <p>
+                We improve your visibility and help people find your website
+                easily.
+              </p>
+            </div>
+
+            <!-- الخدمة الرابعة -->
+            <div class="service-card">
+              <i class="fa-solid fa-desktop service-icon"></i>
+
+              <h3>Web Design</h3>
+
+              <p>
+                We design clean and professional websites for your business.
+              </p>
+            </div>
+
+            <!-- الخدمة الخامسة -->
+            <div class="service-card">
+              <i class="fa-solid fa-bullhorn service-icon"></i>
+
+              <h3>Paid Ads</h3>
+
+              <p>
+                We create focused advertising campaigns for the right audience.
+              </p>
+            </div>
+
+            <!-- الخدمة السادسة -->
+            <div class="service-card">
+              <i class="fa-solid fa-chart-column service-icon"></i>
+
+              <h3>Analytics</h3>
+
+              <p>
+                We study your website data to help you understand your audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- قسم الأسعار  -->
     <div class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-title">
+          <h2>
+            Our
+            <span>Pricing Plans</span>
+          </h2>
 
-        <div class="container">
-
-            <div class="section-title">
-                <h2>
-                    Our
-                    <span>Pricing Plans</span>
-                </h2>
-
-                <div class="title-line"></div>
-            </div>
-
-            <div class="pricing-cards clearfix">
-
-                <!-- الخطة الأولى -->
-                <div class="pricing-card">
-
-                    <h3>Basic</h3>
-
-                    <div class="price">
-                        <span>$</span>49
-                        <small>/Month</small>
-                    </div>
-
-                    <ul>
-                        <li>One Website</li>
-                        <li>Social Media Setup</li>
-                        <li>Monthly Report</li>
-                        <li>Email Support</li>
-                    </ul>
-
-                    <button class="pricing-btn">
-                        Get Started
-                    </button>
-
-                </div>
-
-                <!-- الخطة الثانية -->
-                <div class="pricing-card featured">
-
-                    <div class="popular-label">
-                        Most Popular
-                    </div>
-
-                    <h3>Standard</h3>
-
-                    <div class="price">
-                        <span>$</span>99
-                        <small>/Month</small>
-                    </div>
-
-                    <ul>
-                        <li>Three Websites</li>
-                        <li>Content Creation</li>
-                        <li>Social Media Management</li>
-                        <li>Weekly Report</li>
-                    </ul>
-
-                    <button class="pricing-btn">
-                        Get Started
-                    </button>
-
-                </div>
-
-                <!-- الخطة الثالثة -->
-                <div class="pricing-card">
-
-                    <h3>Premium</h3>
-
-                    <div class="price">
-                        <span>$</span>199
-                        <small>/Month</small>
-                    </div>
-
-                    <ul>
-                        <li>Unlimited Websites</li>
-                        <li>Advanced SEO</li>
-                        <li>Paid Advertising</li>
-                        <li>Priority Support</li>
-                    </ul>
-
-                    <button class="pricing-btn">
-                        Get Started
-                    </button>
-
-                </div>
-
-            </div>
-
+          <div class="title-line"></div>
         </div>
 
+        <div class="pricing-cards clearfix">
+          <!-- الخطة الأولى -->
+          <div class="pricing-card">
+            <h3>Basic</h3>
+
+            <div class="price">
+              <span>$</span>49
+              <small>/Month</small>
+            </div>
+
+            <ul>
+              <li>One Website</li>
+              <li>Social Media Setup</li>
+              <li>Monthly Report</li>
+              <li>Email Support</li>
+            </ul>
+
+            <button class="pricing-btn">Get Started</button>
+          </div>
+
+          <!-- الخطة الثانية -->
+          <div class="pricing-card featured">
+            <div class="popular-label">Most Popular</div>
+
+            <h3>Standard</h3>
+
+            <div class="price">
+              <span>$</span>99
+              <small>/Month</small>
+            </div>
+
+            <ul>
+              <li>Three Websites</li>
+              <li>Content Creation</li>
+              <li>Social Media Management</li>
+              <li>Weekly Report</li>
+            </ul>
+
+            <button class="pricing-btn">Get Started</button>
+          </div>
+
+          <!-- الخطة الثالثة -->
+          <div class="pricing-card">
+            <h3>Premium</h3>
+
+            <div class="price">
+              <span>$</span>199
+              <small>/Month</small>
+            </div>
+
+            <ul>
+              <li>Unlimited Websites</li>
+              <li>Advanced SEO</li>
+              <li>Paid Advertising</li>
+              <li>Priority Support</li>
+            </ul>
+
+            <button class="pricing-btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- قسم التعريف بفريق الشركة  -->
+    <div class="team-section" id="team">
+      <div class="container">
+        <div class="section-title">
+          <h2>
+            Team Of
+            <span>Our Agency</span>
+          </h2>
+
+          <div class="title-line"></div>
+        </div>
+
+        <div class="team-members clearfix">
+          <!-- العضو الأول -->
+          <div class="team-card">
+            <div class="team-image">
+              <img src="images/team-Jo.jpg" alt="johan - Front-end Developer" />
+
+              <div class="team-social">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#"
+                  >n
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="team-info">
+              <h3>johan kasber</h3>
+              <span>Front-end Developer</span>
+              <p>
+                Creates clean and modern websites with a great user experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- العضو الثاني -->
+          <div class="team-card">
+            <div class="team-image">
+              <img src="images/team-emily.jpg" alt="Emily - UX UI Designer" />
+
+              <div class="team-social">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="team-info">
+              <h3>Emily Davis</h3>
+              <span>UX/UI Designer</span>
+              <p>
+                Designs simple and creative interfaces that are easy to use.
+              </p>
+            </div>
+          </div>
+
+          <!-- العضو الثالث -->
+          <div class="team-card">
+            <div class="team-image">
+              <img src="images/team-david.jpg" alt="David - Digital Marketer" />
+
+              <div class="team-social">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="team-info">
+              <h3>David Smith</h3>
+              <span>Digital Marketer</span>
+              <p>Builds effective digital strategies for growing brands.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- قسم لماذا يجب أن تختارنا  -->
+    <div class="why-section" id="why-us">
+      <div class="container">
+        <div class="section-title">
+          <h2>
+            Why
+            <span>Choose Us?</span>
+          </h2>
+
+          <div class="title-line"></div>
+        </div>
+
+        <div class="why-content clearfix">
+          <!-- الصورة -->
+          <div class="why-image">
+            <img
+              src="images/Choose Us.jpg"
+              alt="Our creative digital marketing team"
+            />
+          </div>
+
+          <!-- النص -->
+          <div class="why-text">
+            <h3>
+              We Create Ideas That
+              <span>Make A Difference</span>
+            </h3>
+
+            <p>
+              We are a passionate team of creative professionals who work
+              together to build meaningful and effective digital experiences for
+              every client.
+            </p>
+
+            <p>
+              Our goal is to combine creativity, quality, and clear
+              communication to deliver solutions that meet your needs.
+            </p>
+
+            <ul class="why-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Experienced and skilled team
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Creative and unique solutions
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Clear communication
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Reliable support
+              </li>
+            </ul>
+
+            <a href="#contact" class="why-btn"> Learn More </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
+    <!-- أراء العملاء -->
+    <div class="testimonials clearfix">
+      <div class="testimonials-title">
+        <h2>
+          What Our
+          <span>Client Say?</span>
+        </h2>
 
+        <div class="testimonials-line"></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="images/client-sarah.jpg" alt="Sarah Johnson" />
+        </div>
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          The team understood our goals and created a clear strategy that helped
+          us improve our online presence.
+        </p>
+
+        <h3>Sarah Johnson</h3>
+        <span>Business Owner</span>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="client-image">
+          <img src="images/client-john.jpg" alt="John Smith" />
+        </div>
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Great communication, creative ideas, and excellent support throughout
+          the entire project.
+        </p>
+
+        <h3>John Smith</h3>
+        <span>Company Manager</span>
+      </div>
+    </div>
+    <!-- قسم الأخبار -->
+    <div class="news-section" id="news">
+      <div class="container">
+        <!-- عنوان القسم -->
+        <div class="section-title">
+          <h2>
+            News Of
+            <span>Our Agency</span>
+          </h2>
+
+          <div class="title-line"></div>
+        </div>
+
+        <!-- حاوية بطاقات الأخبار -->
+        <div class="news-cards clearfix">
+          <!-- بطاقة الخبر الأولى -->
+          <div class="news-card">
+            <!-- صورة الخبر -->
+            <div class="news-image">
+              <img src="images/news-one.jpg" alt="Digital marketing trends" />
+            </div>
+
+            <!-- معلومات الخبر -->
+            <div class="news-meta">
+              <span>
+                <i class="fa-solid fa-user"></i>
+                Sarah
+              </span>
+
+              <span>
+                <i class="fa-solid fa-calendar"></i>
+                20 Feb
+              </span>
+
+              <span>
+                <i class="fa-solid fa-comments"></i>
+                12
+              </span>
+            </div>
+
+            <!-- محتوى الخبر -->
+            <div class="news-content">
+              <h3>The Latest Digital Trends</h3>
+
+              <p>
+                Discover useful ideas and creative approaches that can improve
+                your online presence.
+              </p>
+
+              <a href="#" class="news-link"> Read More </a>
+            </div>
+          </div>
+
+          <!-- بطاقة الخبر الثانية -->
+          <div class="news-card">
+            <!-- صورة الخبر -->
+            <div class="news-image">
+              <img src="images/news-two.jpg" alt="Creative content ideas" />
+            </div>
+
+            <!-- معلومات الخبر -->
+            <div class="news-meta">
+              <span>
+                <i class="fa-solid fa-user"></i>
+                Michael
+              </span>
+
+              <span>
+                <i class="fa-solid fa-calendar"></i>
+                25 Feb
+              </span>
+
+              <span>
+                <i class="fa-solid fa-comments"></i>
+                18
+              </span>
+            </div>
+
+            <!-- محتوى الخبر -->
+            <div class="news-content">
+              <h3>How To Create Better Content</h3>
+
+              <p>
+                Learn how to create simple and engaging content that connects
+                with your audience.
+              </p>
+
+              <a href="#" class="news-link"> Read More </a>
+            </div>
+          </div>
+
+          <!-- بطاقة الخبر الثالثة -->
+          <div class="news-card">
+            <!-- صورة الخبر -->
+            <div class="news-image">
+              <img src="images/news-three.jpg" alt="Building a strong brand" />
+            </div>
+
+            <!-- معلومات الخبر -->
+            <div class="news-meta">
+              <span>
+                <i class="fa-solid fa-user"></i>
+                Emily
+              </span>
+
+              <span>
+                <i class="fa-solid fa-calendar"></i>
+                02 Mar
+              </span>
+
+              <span>
+                <i class="fa-solid fa-comments"></i>
+                24
+              </span>
+            </div>
+
+            <!-- محتوى الخبر -->
+            <div class="news-content">
+              <h3>Building A Strong Brand</h3>
+
+              <p>
+                Simple steps to build a clear and consistent identity for your
+                project.
+              </p>
+
+              <a href="#" class="news-link"> Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- قسم تذييل الصفحة  -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content clearfix">
+          <!-- معلومات الوكالة -->
+          <div class="footer-box footer-about">
+            <a href="#" class="footer-logo"> Digital<span>Mark</span> </a>
+
+            <p>
+              We create creative and effective digital experiences that help
+              brands stand out.
+            </p>
+
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- روابط الموقع -->
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+          </div>
+
+          <!-- معلومات التواصل -->
+          <div class="footer-box">
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Lattakia ,Syria
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                +963990000000
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                info@digitalmark.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- حقوق النشر -->
+      <div class="copyright">
+        <p>© 2026 DigitalMark. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

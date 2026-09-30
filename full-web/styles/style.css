@@ -2,33 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-
+  }
+  
+  body {
     height: 3000px;
     color: #17242d;
-}
-
-.container {
+  }
+  
+  .container {
     width: 80%;
     margin: auto;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-button,
-span,
-li {
-    font-family: 'Merriweather', serif;
-}
-
-.navbar {
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  button,
+  span,
+  li {
+    font-family: "Merriweather", serif;
+  }
+  
+  .navbar {
     background-color: rgb(21, 38, 55);
     width: 100%;
     height: 72px;
@@ -36,26 +35,26 @@ li {
     top: 0;
     left: 0;
     z-index: 1000;
-}
-
-.navbar img {
+  }
+  
+  .navbar img {
     width: auto;
     height: 72px;
     float: left;
     margin-left: 10%;
     padding-top: 16px;
     padding-bottom: 16px;
-
-}
-
-.navbar ul {
+  }
+  
+  .navbar ul {
     list-style-type: none;
     float: right;
     margin-right: 10%;
     margin-top: 24px;
-}
-
-.navbar ul li {
+    position: relative;
+  }
+  
+  .navbar ul li {
     color: white;
     display: inline;
     margin-right: 24px;
@@ -63,10 +62,27 @@ li {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-/* strart hero image */
-.hero {
+  }
+  
+  .navbar ul li:hover {
+    color: #d81b60;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .home-line {
+    width: 65px;
+    height: 3px;
+    position: fixed;
+    background-color: #d81b60;
+    left: 39.4%;
+    margin-top: 2px;
+  }
+  
+  /* strart hero image */
+  .hero {
     width: 100%;
     height: calc(100vh - 72px);
     margin-top: 72px;
@@ -76,9 +92,9 @@ li {
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
-}
-
-.hero .info {
+  }
+  
+  .hero .info {
     width: 75%;
     height: auto;
     position: absolute;
@@ -86,10 +102,9 @@ li {
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 32px;
-
-}
-
-.hero .info h1 {
+  }
+  
+  .hero .info h1 {
     font-size: 56px;
     line-height: 1.15;
     font-weight: bold;
@@ -99,9 +114,9 @@ li {
     word-spacing: 4px;
     letter-spacing: 2px;
     margin-bottom: 8px;
-}
-
-.hero .info p {
+  }
+  
+  .hero .info p {
     color: #ffff;
     text-align: center;
     word-spacing: 1px;
@@ -109,61 +124,62 @@ li {
     margin-bottom: 24px;
     font-size: 16px;
     font-weight: bold;
-}
-
-.button1,
-.button2 {
+  }
+  
+  .hero-button button {
     height: 42px;
     width: auto;
     padding: 8px 16px 8px 16px;
-    border: 1px solid #D81B60;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     text-transform: capitalize;
     font-weight: bold;
     word-spacing: 1px;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: #D81B60;
+    background-color: #d81b60;
     color: #ffff;
     margin-left: 16px;
-}
-
-.hero-button {
+  }
+  
+  .hero-button {
     display: inline-block;
     margin-left: calc(35% - 16px);
-}
-
-/* end hero section */
-
-
-/* start agency sction */
-
-/* تنسيق عنوان القسم */
-.welcome-section {
+  }
+  
+  .hero-button button:hover {
+    background-color: #17242d;
+  }
+  
+  /* end hero section */
+  
+  /* start agency sction */
+  
+  /* تنسيق عنوان القسم */
+  .welcome-section {
     padding: 80px 0px;
-
+  
     overflow: auto;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     text-align: center;
     margin-bottom: 45px;
-}
-
-.section-title h2 {
+  }
+  
+  .section-title h2 {
     font-size: 36px;
     font-weight: 700;
     color: #17242d;
-}
-
-.section-title h2 span {
+  }
+  
+  .section-title h2 span {
     color: #d81b60;
-}
-
-
-/* ترتيب البطاقات بجانب بعضها استخدمت الطفو */
-
-.welcome-card {
+  }
+  
+  /* ترتيب البطاقات بجانب بعضها استخدمت الطفو */
+  
+  .welcome-card {
     float: left;
     width: 31.33%;
     min-height: 280px;
@@ -172,14 +188,14 @@ li {
     text-align: center;
     border: 1px solid #bdbdbd;
     background-color: #ffffff;
-}
-
-/* تنسيق البطاقة  */
-.welcome-card:last-child {
+  }
+  
+  /* تنسيق البطاقة  */
+  .welcome-card:last-child {
     margin-right: 0px;
-}
-
-.welcome-card {
+  }
+  
+  .welcome-card {
     min-height: 280px;
     padding: 30px 25px;
     text-align: center;
@@ -189,54 +205,54 @@ li {
     position: relative;
     overflow: auto;
     z-index: 10;
-}
-
-/* تنسيق الأيقونات و النصوص */
-.card-icon {
+  }
+  
+  /* تنسيق الأيقونات و النصوص */
+  .card-icon {
     display: block;
     margin-bottom: 2px;
     font-size: 48px;
     color: #d81b60;
-}
-
-.welcome-card h3 {
+  }
+  
+  .welcome-card h3 {
     margin-bottom: 18px;
     color: #d81b60;
     font-size: 25px;
-}
-
-.welcome-card p {
+  }
+  
+  .welcome-card p {
     min-height: 85px;
     margin-bottom: 20px;
     color: #17242d;
     font-size: 16px;
     line-height: 1.8;
     font-weight: bold;
-}
-
-.welcome-card .card-icon {
+  }
+  
+  .welcome-card .card-icon {
     display: block;
     margin-bottom: 20px;
     font-size: 48px;
     color: #d81b60;
-}
-
-.welcome-card h3 {
+  }
+  
+  .welcome-card h3 {
     margin-bottom: 18px;
     color: #d81b60;
     font-size: 25px;
-}
-
-.welcome-card p {
+  }
+  
+  .welcome-card p {
     min-height: 85px;
     margin-bottom: 20px;
     color: #17242d;
     font-size: 16px;
     line-height: 1.8;
     font-weight: bold;
-}
-
-.welcome-card .welcome-card-btn {
+  }
+  
+  .welcome-card .welcome-card-btn {
     display: inline-block;
     padding: 8px 16px;
     background-color: #17242d;
@@ -244,341 +260,1080 @@ li {
     text-decoration: none;
     font-size: medium;
     text-transform: capitalize;
-}
-
-.welcome-card .welcome-card-btn:hover {
+  }
+  
+  .welcome-card .welcome-card-btn:hover {
     background-color: #d81b60;
-}
-
-.welcome-card .welcome-card-btn {
+  }
+  
+  .welcome-card .welcome-card-btn {
     display: inline-block;
     padding: 10px 18px;
     background-color: #17242d;
     color: white;
     text-decoration: none;
-}
-
-.welcome-card .welcome-card-btn :hover {
+  }
+  
+  .welcome-card .welcome-card-btn :hover {
     background-color: #d81b60;
-}
-
-/* end agency sction */
-
-/* start service section */
-/* تنسيق عناوين الأقسام  */
-.section-title {
+  }
+  
+  /* end agency sction */
+  
+  /* start service section */
+  /* تنسيق عناوين الأقسام  */
+  .section-title {
     text-align: center;
     margin-bottom: 45px;
-}
-
-.section-title h2 {
+  }
+  
+  .section-title h2 {
     font-size: 36px;
     font-weight: 700;
     color: #17242d;
-}
-
-.section-title h2 span {
+  }
+  
+  .section-title h2 span {
     color: #d81b60;
-}
-
-.title-line {
+  }
+  
+  .title-line {
     width: 145px;
     height: 4px;
     margin: 12px auto 0;
     background-color: #17242d;
     position: relative;
-}
-
-.services-section .title-line,
-.work-section .title-line {
+  }
+  
+  .services-section .title-line,
+  .work-section .title-line,
+  .testimonials .testimonials-title .testimonials-line {
     width: 145px;
     height: 4px;
     margin: 12px auto 0;
     background-color: #ffffff;
     position: relative;
-}
-
-.services-section .section-title h2,
-.work-section .section-title h2 {
+  }
+  
+  .services-section .section-title h2,
+  .work-section .section-title h2 {
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-}
-
-
-/* إضافة صورة موحدة للقسمسن معا */
-.two-section {
+  }
+  
+  /* إضافة صورة موحدة للقسمسن معا */
+  .two-section {
+    margin-bottom: 48px;
     width: 100%;
-    height: 1300px;
+    height: 1400px;
     overflow: visible;
     margin-top: 46px;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.2)),
-        url("../images/abstract-neutral-section-background.png");
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 11)),
+      url("../images/hero-marketing.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
-
-/* تنسيق قسم الخدمات  */
-.services-section {
+  }
+  
+  /* تنسيق قسم الخدمات  */
+  .services-section {
     padding: 16px 0;
-}
-
-/* ترتيب بطاقات الخدمات باستخدام Float */
-.service-card {
+  }
+  
+  /* ترتيب بطاقات الخدمات باستخدام Float */
+  .service-card {
     float: left;
     width: 31.33%;
     min-height: 205px;
     margin-right: 3%;
     margin-bottom: 24px;
     padding: 28px 25px;
-
+  
     background-color: rgba(255, 255, 255, 0.94);
     border: 1px solid #bdbdbd;
     text-align: left;
-
+  
     transition: 0.3s;
-}
-
-.service-card:nth-child(3n) {
+  }
+  
+  .service-card:nth-child(3n) {
     margin-right: 0;
-}
-
-/* تنسيق أيقونات الخدمات */
-.service-icon {
+  }
+  
+  /* تنسيق أيقونات الخدمات */
+  .service-icon {
     display: block;
     margin-bottom: 15px;
     font-size: 35px;
     color: #d81b60;
-}
-
-/* تنسيق عناوين الخدمات */
-.service-card h3 {
+  }
+  
+  /* تنسيق عناوين الخدمات */
+  .service-card h3 {
     margin-bottom: 12px;
     color: #17242d;
     font-size: 21px;
-}
-
-/* تنسيق نصوص الخدمات */
-.service-card p {
+  }
+  
+  /* تنسيق نصوص الخدمات */
+  .service-card p {
     color: #17242d;
     font-size: 14px;
     line-height: 1.8;
-}
-
-/* تأثير Hover على بطاقات الخدمات */
-.service-card:hover {
+  }
+  
+  /* تأثير Hover على بطاقات الخدمات */
+  .service-card:hover {
     background-color: #17242d;
     transform: translateY(-8px);
-
-}
-
-.service-card:hover h3,
-.service-card:hover p {
+  }
+  
+  .service-card:hover h3,
+  .service-card:hover p {
     color: #ffffff;
-}
-
-.service-card:hover .service-icon {
+  }
+  
+  .service-card:hover .service-icon {
     color: #d81b60;
-}
-
-/* تنسيق قسم Our Work */
-.work-section {
+  }
+  
+  /* تنسيق قسم Our Work */
+  .work-section {
     padding: 16px 0;
-
-}
-
-/* ترتيب صور Our Work باستخدام Float */
-.work-card {
+  }
+  
+  /* ترتيب صور Our Work باستخدام Float */
+  .work-card {
     float: left;
     width: 31.33%;
     height: 220px;
     margin-right: 3%;
     margin-bottom: 24px;
-
+  
     position: relative;
     overflow: hidden;
-
+  
     background-color: #17242d;
     border-radius: 8px;
     cursor: pointer;
-}
-
-.work-card:nth-child(3n) {
+  }
+  
+  .work-card:nth-child(3n) {
     margin-right: 0;
-}
-
-/* تنسيق صور المعرض */
-
-.work-card img {
+  }
+  
+  /* تنسيق صور المعرض */
+  
+  .work-card img {
     width: 100%;
     height: 100%;
     display: block;
     border: 1px solid #bdbdbd;
     object-fit: cover;
     transition: 0.4s;
-}
-
-/* إضافة طبقة فوق صور المعرض */
-.work-overlay {
+  }
+  
+  /* إضافة طبقة فوق صور المعرض */
+  .work-overlay {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-
+  
     padding: 20px 18px;
-
+  
     color: #ffffff;
-    background: linear-gradient(transparent,
-            rgba(23, 36, 45, 80.2));
-
+    background: linear-gradient(transparent, rgba(23, 36, 45, 80.2));
+  
     transform: translateY(100%);
     transition: 0.4s;
-}
-
-/* تنشيط الطبقة عند مرور مؤشر الفأرة Hover */
-.work-card:hover .work-overlay {
+  }
+  
+  /* تنشيط الطبقة عند مرور مؤشر الفأرة Hover */
+  .work-card:hover .work-overlay {
     transform: translateY(0);
-}
-
-/* تنسيق نصوص المعرض */
-.work-overlay h3 {
+  }
+  
+  /* تنسيق نصوص المعرض */
+  .work-overlay h3 {
     margin-bottom: 5px;
     color: #ffffff;
     font-size: 19px;
-}
-
-.work-overlay p {
+  }
+  
+  .work-overlay p {
     color: #eb6299;
     font-size: 16px;
-}
-
-/* ترتيب البطاقات باستخدام float */
-.pricing-card {
+  }
+  
+  /* ترتيب البطاقات باستخدام float */
+  .pricing-card {
     float: left;
     width: 31.33%;
-    min-height: 410px;
+    height: 500px;
     margin-right: 3%;
     padding: 35px 25px;
-
+    margin-bottom: 48px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: #ffffff;
     border: 1px solid #bdbdbd;
-
+  
     position: relative;
     transition: 0.3s;
-}
-
-.pricing-card:last-child {
+  }
+  
+  .pricing-card:last-child {
     margin-right: 0;
-}
-
-/* حل مشكلة الطفو بطريقة الابن الفارغ الإضافي */
-.clearfix::after {
+  }
+  
+  /* حل مشكلة الطفو بطريقة الابن الفارغ الإضافي */
+  .clearfix::after {
     content: "";
     display: table;
     clear: both;
-}
-
-/* تنسق خطة السعر  */
-.pricing-card h3 {
+  }
+  
+  /* تنسق خطة السعر  */
+  .pricing-card h3 {
     margin-bottom: 25px;
-
+  
     color: #d81b60;
     font-size: 26px;
     font-weight: 700;
-}
-
-/* تنسيق السعر  */
-.price {
+  }
+  
+  /* تنسيق السعر  */
+  .price {
     width: 120px;
     height: 120px;
-
+  
     margin: 0 auto 28px;
-
+  
     border: 2px solid #d81b60;
     border-radius: 50%;
-
+  
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-
+  
     color: #17242d;
     font-size: 36px;
     font-weight: 700;
-}
-
-/* تنسيق إشارةدولار $ */
-.price span {
+  }
+  
+  /* تنسيق إشارةدولار $ */
+  .price span {
     font-size: 20px;
     margin-right: 3px;
     color: #d81b60;
-}
-
-/* تنسيق كلمة الشهر  */
-.price small {
+  }
+  
+  /* تنسيق كلمة الشهر  */
+  .price small {
     display: block;
     width: 100%;
-
+  
     margin-top: 4px;
-
+  
     color: #d81b60;
     font-size: 14px;
     font-weight: 700;
-}
-
-/* تنسيق قائمة المزايا  */
-.pricing-card ul {
+  }
+  
+  /* تنسيق قائمة المزايا  */
+  .pricing-card ul {
     padding: 0;
     margin: 0 0 28px;
-
+  
     list-style: none;
-}
-
-/* تنسيق عنصر لائحة */
-.pricing-card li {
+  }
+  
+  /* تنسيق عنصر لائحة */
+  .pricing-card li {
     margin-bottom: 13px;
-
+  
     color: #17242d;
     font-size: 14px;
-}
-
-/* إضافة إشارة صحيح قبل كل خيار محدد */
-.pricing-card li::before {
+  }
+  
+  /* إضافة إشارة صحيح قبل كل خيار محدد */
+  .pricing-card li::before {
     content: "✓";
     margin-right: 8px;
-
+  
     color: #d81b60;
     font-weight: bold;
-}
-
-/* تنسيق زر الخطة  */
-.pricing-btn {
+  }
+  
+  /* تنسيق زر الخطة  */
+  .pricing-btn {
     display: inline-block;
-
+  
     padding: 11px 25px;
-
+  
     background-color: #17242d;
     color: #ffffff;
-
+  
     text-decoration: none;
     font-size: 14px;
-
+  
     transition: 0.3s;
-}
-
-.pricing-btn:hover {
+  }
+  
+  .pricing-btn:hover {
     background-color: #d81b60;
     color: #ffffff;
-}
-
-/* تاثير تمرير الفأرة على البطاقة  */
-.pricing-card:hover {
+  }
+  
+  /* تاثير تمرير الفأرة على البطاقة  */
+  .pricing-card:hover {
     transform: translateY(-10px);
     border-color: #d81b60;
     box-shadow: 0 8px 20px rgba(23, 36, 45, 0.18);
-}
+  }
+  
+  /* تنسيق قسم فريق العمل  */
+  
+  /* ترتيب بطاقات الفريق باستخدام float */
+  .team-card {
+    float: left;
+    width: 31.33%;
+    margin-right: 3%;
+  
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+  
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .team-card:last-child {
+    margin-right: 0;
+  }
+  
+  /* تنسيق صورة العضو */
+  .team-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background-color: #17242d;
+  }
+  
+  .team-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+  
+    transition: 0.4s;
+  }
+  
+  /* إضافة طبقة الأيقونات */
+  
+  .team-social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    padding: 16px;
+  
+    background-color: rgba(23, 36, 45, 0.9);
+  
+    transform: translateY(100%);
+    transition: 0.3s;
+  }
+  
+  /* عند تمرير المؤشر  */
+  .team-card:hover .team-social {
+    transform: translateY(0);
+  }
+  
+  /* تنسيق أيقونات التواصل */
+  .team-social a {
+    display: inline-block;
+  
+    width: 34px;
+    height: 34px;
+  
+    margin: 0 4px;
+    padding-top: 8px;
+  
+    border-radius: 50%;
+  
+    background-color: #d81b60;
+    color: #ffffff;
+  
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  /* عند تمرير المؤشر */
+  .team-social a:hover {
+    background-color: #ffffff;
+    color: #d81b60;
+  }
+  
+  /* تنيق المعلومات  */
+  .team-info {
+    min-height: 180px;
+    padding: 22px 18px;
+  }
+  
+  /* تنسيق المسمى الوظيفي */
+  .team-info h3 {
+    margin-bottom: 8px;
+  
+    color: #17242d;
+    font-size: 22px;
+  }
+  
+  /* تنسيق الوصف */
+  .team-info p {
+    color: #17242d;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  /* تأثير Hover على البطاقة */
+  .team-card:hover {
+    transform: translateY(-8px);
+    border-color: #d81b60;
+    box-shadow: 0 8px 18px rgba(23, 36, 45, 0.16);
+  }
+  
+  /* تنسيق القسم الرئيسي */
+  .why-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+  }
+  
+  .why-content {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* ترتيب الصورة والنص باستخدام Float */
+  .why-image {
+    float: left;
+    width: 48%;
+    height: 300px;
+    margin-right: 4%;
+    border: 2px solid #d81b60;
+    overflow: hidden;
+  }
+  
+  .why-text {
+    float: left;
+    width: 48%;
+    min-height: 360px;
+    padding: 15px 0;
+  }
+  
+  /* تنسيق الصورة بشكل افتراضي و عند مرور المؤشر */
+  .why-image img {
+    width: 100%;
+    height: 100%;
+  
+    display: block;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  
+  .why-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* تنسيق الفقرة النصية مع عنوانها */
+  .why-text h3 {
+    margin-bottom: 16px;
+    margin-top: -18px;
+    color: #17242d;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  
+  .why-text h3 span {
+    color: #d81b60;
+  }
+  
+  .why-text p {
+    color: #17242d;
+    font-size: 15px;
+  }
+  
+  /* تنسيق قائمة الميزات و العناصر بداخلها */
+  .why-list {
+    padding: 0;
+    margin: 16px 0;
+  
+    list-style: none;
+  }
+  
+  .why-list li {
+    margin-bottom: 8px;
+  
+    color: #17242d;
+    font-size: 15px;
+  }
+  
+  /* تنسيق إشارة الصح */
+  .why-list li i {
+    width: 16px;
+    height: 16px;
+  
+    margin-right: 8px;
+    padding-top: 3px;
+  
+    border-radius: 50%;
+  
+    background-color: #d81b60;
+    color: #ffffff;
+  
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  /* تنسيق زر Learn More */
+  .why-btn {
+    display: inline-block;
+  
+    padding: 12px 25px;
+  
+    background-color: #17242d;
+    color: #ffffff;
+  
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .why-btn:hover {
+    background-color: #d81b60;
+    color: #ffffff;
+  }
+  
+  /* تنسيق قسم الأرقام و الحصائيات */
+  .statistics-section {
+    padding: 32px 0px;
+    background-color: #ffffff;
+  }
+  
+  .statistic-box {
+    float: left;
+    width: 25%;
+    padding: 10px 0px;
+  
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .statistic-box:last-child {
+    border-right: none;
+  }
+  
+  /*  تنسيق الأرقام و الأيقونات و وصف الأحصائيات*/
+  .statistic-icon {
+    margin-bottom: 16px;
+  
+    color: #d81b60;
+    font-size: 28px;
+  }
+  
+  .statistic-box h3 {
+    margin-bottom: 8px;
+  
+    color: #17242d;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .statistic-box p {
+    color: #494949;
+    font-size: 14px;
+  }
+  
+  .statistic-box {
+    transition: 0.3s;
+  }
+  
+  .statistic-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .statistic-box:hover .statistic-icon {
+    color: #17242d;
+  }
+  
+  .statistic-box:hover h3 {
+    color: #d81b60;
+  }
+  
+  /* قسم أراء العملاء */
+  .testimonials-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  
+  .testimonials-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .testimonials-title h2 span {
+    color: #d81b60;
+  }
+  
+  .testimonials-section .testimonials-line {
+    background-color: #ffffff;
+  }
+  
+  .testimonials-line {
+    background-color: #ffffff;
+  }
+  
+  .testimonials {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: auto;
+    background-color: #17242d;
+  }
+  
+  .testimonials-section .testimonial .testimonial-title h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 48px;
+  }
+  
+  .testimonial-card {
+    float: left;
+    width: 48%;
+    min-height: 350px;
+    margin-right: 4%;
+    padding: 30px 25px;
+  
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+  
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  /*
+     إزالة الهامش من البطاقة الثانية:
+     حتى لا يتجاوز مجموع عرض البطاقتين مساحة الحاوية.
+  */
+  .testimonial-card:last-child {
+    margin-right: 0;
+  }
+  
+  /*
+     تأثير عند تمرير المؤشر على البطاقة:
+     - تتحرك البطاقة قليلًا إلى الأعلى.
+     - يتغير لون الحدود إلى الزهري.
+     - يظهر ظل خفيف حول البطاقة.
+  */
+  .testimonial-card:hover {
+    transform: translateY(-8px);
+    border-color: #d81b60;
+    box-shadow: 0 8px 18px rgba(23, 36, 45, 0.16);
+  }
+  
+  /*
+     صورة العميل
+     */
+  
+  .client-image {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+  
+    overflow: hidden;
+    border: 3px solid #d81b60;
+    border-radius: 50%;
+  }
+  
+  /*
+     ضبط الصورة داخل الدائرة:
+  */
+  .client-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /*
+     نجوم التقييم
+   */
+  
+  .stars {
+    margin-bottom: 18px;
+  
+    color: #d81b60;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  /*
+     تنسيق نص رأي العميل:
+  */
+  .testimonial-card p {
+    min-height: 110px;
+    margin-bottom: 20px;
+  
+    color: #17242d;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  /*
+     تنسيق اسم العميل.
+  */
+  .testimonial-card h3 {
+    margin-bottom: 7px;
+  
+    color: #17242d;
+    font-size: 20px;
+  }
+  
+  /*
+     تنسيق وظيفة العميل.
+  */
+  .testimonial-card span {
+    color: #d81b60;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  /*
+     قسم أخبار الوكالة
+  */
+  
+  /*
+     تنسيق القسم الرئيسي.
+  */
+  .news-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+  }
+  
+  /*
+     حاوية البطاقات.
+  */
+  .news-cards {
+    width: 100%;
+  }
+  
+  /*
+     تنسيق بطاقة الخبر:
+     نستخدم float لترتيب ثلاث بطاقات بجانب بعضها.
+  */
+  .news-card {
+    float: left;
+  
+    width: 31.33%;
+    min-height: 450px;
+  
+    margin-right: 3%;
+  
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+  
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  /*
+     إزالة الهامش من البطاقة الأخيرة.
+  */
+  .news-card:last-child {
+    margin-right: 0;
+  }
+  
+  /*
+     تأثير البطاقة عند تمرير المؤشر.
+  */
+  .news-card:hover {
+    transform: translateY(-8px);
+  
+    border-color: #d81b60;
+  
+    box-shadow: 0 8px 18px rgba(23, 36, 45, 0.16);
+  }
+  
+  /*
+     حاوية صورة الخبر.
+  */
+  .news-image {
+    width: 100%;
+    height: 210px;
+  
+    overflow: hidden;
+  }
+  
+  /*
+     صورة الخبر.
+  */
+  .news-image img {
+    width: 100%;
+    height: 100%;
+  
+    display: block;
+  
+    object-fit: cover;
+  
+    transition: 0.4s;
+  }
+  
+  /*
+     تكبير الصورة عند المرور على البطاقة.
+  */
+  .news-card:hover .news-image img {
+    transform: scale(1.08);
+  }
+  
+  /*
+     معلومات الخبر: الكاتب والتاريخ والتعليقات.
+  */
+  .news-meta {
+    padding: 15px 18px 0;
+  
+    color: #777777;
+    font-size: 12px;
+  }
+  
+  /*
+     المسافة بين عناصر معلومات الخبر.
+  */
+  .news-meta span {
+    margin-right: 12px;
+  }
+  
+  /*
+     أيقونات معلومات الخبر.
+  */
+  .news-meta i {
+    margin-right: 4px;
+    color: #d81b60;
+  }
+  
+  /*
+     محتوى الخبر الداخلي.
+  */
+  .news-content {
+    padding: 15px 18px 25px;
+  }
+  
+  /*
+     عنوان الخبر.
+  */
+  .news-content h3 {
+    min-height: 55px;
+  
+    margin-bottom: 12px;
+  
+    color: #17242d;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  
+  /*
+     وصف الخبر.
+  */
+  .news-content p {
+    min-height: 85px;
+  
+    margin-bottom: 18px;
+  
+    color: #17242d;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  /*
+     رابط قراءة المزيد.
+  */
+  .news-link {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
+    padding: 10px 18px;
+  
+    background-color: #17242d;
+    color: #ffffff;
+  
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  /*
+     تغيير لون الرابط عند المرور عليه.
+  */
+  .news-link:hover {
+    background-color: #d81b60;
+    color: #ffffff;
+  }
+  
+  /* تنسيق قسم تذييل الصفحة */
+  .footer {
+    background-color: #17242d;
+    color: #ffffff;
+  }
+  
+  .footer-content {
+    padding: 60px 0 45px;
+  }
+  
+  .footer-box {
+    float: left;
+    width: 31.33%;
+    margin-right: 3%;
+    padding: 0 15px;
+  }
+  
+  /* إزالة الهامش من جهة اليمين من آخر ابن لكي لا يبدأ بسطر جديد  */
+  .footer-box:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 18px;
+  
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .footer-logo span {
+    color: #d81b60;
+  }
+  
+  .footer-about p {
+    max-width: 280px;
+  
+    color: #d7dce0;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer-box h3 {
+    position: relative;
+    margin-bottom: 22px;
+  
+    color: #ffffff;
+    font-size: 21px;
+  }
+  
+  .footer-box h3::after {
+    content: "";
+  
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+  
+    width: 45px;
+    height: 3px;
+  
+    background-color: #d81b60;
+  }
+  
+  .footer-links,
+  .contact-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: #d7dce0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  /* تنسيق الراوابط  في تذييل الصفحة عند مرور الفأرة عليها */
+  .footer-links a:hover {
+    padding-left: 6px;
+    color: #d81b60;
+  }
+  
+  .contact-list li {
+    margin-bottom: 16px;
+  
+    color: #d7dce0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .contact-list i {
+    width: 22px;
+    margin-right: 8px;
+  
+    color: #d81b60;
+    text-align: center;
+  }
+  
+  /* تنسيق قسم السوشل ميديا في تذييل الصفحة */
+  .footer-social {
+    margin-top: 24px;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+  
+    width: 34px;
+    height: 34px;
+  
+    margin-right: 7px;
+    padding-top: 8px;
+  
+    border: 1px solid #d81b60;
+    border-radius: 50%;
+  
+    color: #d81b60;
+    text-align: center;
+    text-decoration: none;
+  
+    transition: 0.3s;
+  }
+  
+  /* تطبيق تأثير ال Hover على أيقونات السوشل ميديا في التذييل */
+  .footer-social a:hover {
+    background-color: #d81b60;
+    color: #ffffff;
+    transform: translateY(-4px);
+  }
+  
+  /* حقوق الملكية محفوظة  */
+  .copyright {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+  }
+  
+  .copyright p {
+    color: #bfc7cc;
+    font-size: 13px;
+  }
